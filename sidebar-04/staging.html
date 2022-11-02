@@ -1,0 +1,108 @@
+<body>
+<!doctype html>
+<html lang="en">
+<head>
+ <title>Sidebar 04</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="wrapper d-flex align-items-stretch">
+   <nav id="sidebar">
+    <div class="custom-menu">
+     <button type="button" id="sidebarCollapse" class="btn btn-primary">
+       <i class="fa fa-bars"></i>
+       <span class="sr-only">Toggle Menu</span>
+     </button>
+   </div>
+   <h1><a href="#" class="logo">Git &Github</a></h1>
+   <ul class="list-unstyled components mb-5">
+     <li class="active">
+      <a href="index.html"><span class="fa fa-home mr-3"></span>Intro: Sheikh</a>
+    </li>
+    <li>
+      <a href="staging.html"><span class="fa fa-user mr-3"></span>commands:Lynne</a>
+    </li>
+    <li>
+      <a href="collaboration.html"><span class="fa fa-sticky-note mr-3"></span>collaborations:Rita</a>
+    </li>
+    <li>
+      <a href="changes.html"><span class="fa fa-sticky-note mr-3"></span>Muchira</a>
+    </li>
+    <li>
+      <a href="branching.html"><span class="fa fa-paper-plane mr-3"></span> Constance</a>
+    </li>
+    <li>
+      <a href="bestpractises.html"><span class="fa fa-paper-plane mr-3"></span>Evans</a>
+    </li>
+  </ul>
+
+</nav>
+
+<!-- Page Content  -->
+<div id="content" class="p-4 p-md-5 pt-5">
+
+
+    <h2>
+       Git Init
+    </h2>
+    <h1>please make more changes</h1>
+  
+  <p>
+     
+The git init command is the first command that you will run on Git. The git init command is used to create a new blank repository. It is used to make an existing project as a Git project. Several Git commands run inside the repository, but init command can be run outside of the repository.
+
+The git init command creates a .git subdirectory in the current working directory. This newly created subdirectory contains all of the necessary metadata. These metadata can be categorized into objects, refs, and temp files. It also initializes a HEAD pointer for the master branch of the repository.
+  </p>
+  
+   <code>
+$ git init  
+</code>
+
+    <h2>
+       Git Add
+    </h2>
+  
+  <p>
+     
+The git add command is used to add file contents to the Index (Staging Area).This command updates the current content of the working tree to the staging area. It also prepares the staged content for the next commit. Every time we add or update any file in our project, it is required to forward updates to the staging area.
+  </p>
+  
+   <code>
+$ git add "File name"   
+</code>
+ <h2>
+     Git Commit
+    </h2>
+  
+  <p>
+     
+It is used to record the changes in the repository. It is the next command after the git add. Every commit contains the index data and the commit message. Every commit forms a parent-child relationship. When we add a file in Git, it will take place in the staging area. A commit command is used to fetch updates from the staging area to the repository.
+
+The staging and committing are co-related to each other. Staging allows us to continue in making changes to the repository, and when we want to share these changes to the version control system, committing allows us to record these changes.
+
+Commits are the snapshots of the project. Every commit is recorded in the master branch of the repository. We can recall the commits or revert it to the older version. Two different commits will never overwrite because each commit has its own commit-id. This commit-id is a cryptographic number created by SHA (Secure Hash Algorithm) algorithm.
+  </p>
+  
+   <code>
+$ git commit -m "Commit message."    
+</code>
+<h2>git clone</h2>
+<p>
+  The git clone is a command-line utility which is used to make a local copy of a remote repository. It accesses the repository through a remote URL.
+
+Usually, the original repository is located on a remote server, often from a Git service like GitHub, Bitbucket, or GitLab. The remote repository URL is referred to the origin.
+</p>
+<code>
+  $ git clone "repository URL"
+</code>
+  <div class="container">
+</div>
+</div>
+</div>
